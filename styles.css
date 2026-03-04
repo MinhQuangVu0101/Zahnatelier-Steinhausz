@@ -38,9 +38,10 @@ h1,
 h2,
 h3 {
   margin: 0 0 0.65rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.06em;
 }
 
 p {
@@ -97,15 +98,11 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 1.18rem;
-  font-weight: 600;
-  font-family: 'Playfair Display', serif;
   text-decoration: none;
 }
 
 .brand-logo {
-  height: 40px;
+  height: 52px;
   width: auto;
   filter: brightness(0) saturate(100%) invert(28%) sepia(12%) saturate(820%) hue-rotate(77deg) brightness(96%) contrast(88%);
 }
@@ -248,6 +245,8 @@ a {
 
 .hero h1 {
   font-size: clamp(2.1rem, 4.5vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 0.08em;
 }
 
 .hero-subline {
@@ -555,12 +554,11 @@ a {
 .footer-brand {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
 }
 
 .footer-logo {
-  height: 36px;
+  height: 48px;
   width: auto;
   filter: brightness(0) saturate(100%) invert(28%) sepia(12%) saturate(820%) hue-rotate(77deg) brightness(96%) contrast(88%);
 }
@@ -569,6 +567,38 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(109, 140, 103, 0.4);
+  background: rgba(248, 252, 246, 0.6);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-social a:hover {
+  background: var(--sage);
+  border-color: var(--sage);
+}
+
+.footer-social a:hover svg {
+  fill: #fff;
+}
+
+.footer-social svg {
+  width: 18px;
+  height: 18px;
+  fill: #4c6449;
+  transition: fill 0.2s ease;
 }
 
 .social-rail {
