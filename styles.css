@@ -253,6 +253,23 @@ a {
   color: var(--muted);
 }
 
+.hero-img-placeholder {
+  margin: 1rem 0 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #dbe8d5 0%, #c8d9c0 50%, #b8ccaf 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero-actions {
   margin-top: 1.1rem;
   display: flex;
@@ -280,10 +297,10 @@ a {
 }
 
 .about-visual img {
-  width: 85%;
-  max-width: 420px;
-  height: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .about-content {
