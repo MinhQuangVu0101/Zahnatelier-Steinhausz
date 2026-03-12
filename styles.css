@@ -255,6 +255,7 @@ a {
 
 .hero-img-placeholder {
   margin: 1rem 0 0;
+  max-width: 420px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   aspect-ratio: 16 / 9;
