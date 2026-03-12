@@ -711,12 +711,13 @@ a {
   z-index: 95;
   opacity: 0;
   pointer-events: none;
-  padding: 0.65rem 0.9rem;
+  padding: 0.85rem 1.1rem;
   border: 1px solid var(--accent);
   border-radius: 999px;
   background: var(--accent);
   color: #fff;
-  box-shadow: var(--shadow-soft);
+  font-size: 1.15rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
   transition: opacity 0.2s ease;
 }
 
